@@ -163,8 +163,8 @@ FeatureTracker::FeatureFrame FeatureTracker::trackImage(double time_in, const cv
     
     for(auto& n : track_cnt)
         n++;
+        
     // 初始化
-    
     setMask();
 
     int n_max_cnt = FEATURE_NUM - static_cast<int>(cur_pts.size());
